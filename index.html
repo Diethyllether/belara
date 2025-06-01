@@ -1,0 +1,333 @@
+<!--
+ _______   ________  _________  ________  ___  ___          ________ ___  ________  ________  ________   ________  ________          ___       ________  ___  ___  ________  ________       
+|\  ___ \ |\   ____\|\___   ___\\   __  \|\  \|\  \        |\  _____\\  \|\   ____\|\   __  \|\   ___  \|\   ___ \|\   __  \        |\  \     |\   __  \|\  \|\  \|\   ____\|\   __  \    
+\ \   __/|\ \  \___|\|___ \  \_\ \  \|\  \ \  \\\  \       \ \  \__/\ \  \ \  \___|\ \  \|\  \ \  \\ \  \ \  \_|\ \ \  \|\  \       \ \  \    \ \  \|\  \ \  \\\  \ \  \___|\ \  \|\  \   
+ \ \  \_|/_\ \_____  \   \ \  \ \ \  \\\  \ \  \\\  \       \ \   __\\ \  \ \  \    \ \   __  \ \  \\ \  \ \  \ \\ \ \  \\\  \       \ \  \    \ \  \\\  \ \  \\\  \ \  \    \ \  \\\  \  
+  \ \  \_|\ \|____|\  \   \ \  \ \ \  \\\  \ \  \\\  \       \ \  \_| \ \  \ \  \____\ \  \ \  \ \  \\ \  \ \  \_\\ \ \  \\\  \       \ \  \____\ \  \\\  \ \  \\\  \ \  \____\ \  \\\  \ 
+   \ \_______\____\_\  \   \ \__\ \ \_______\ \_______\       \ \__\   \ \__\ \_______\ \__\ \__\ \__\\ \__\ \_______\ \_______\       \ \_______\ \_______\ \_______\ \_______\ \_______\
+    \|_______|\_________\   \|__|  \|_______|\|_______|        \|__|    \|__|\|_______|\|__|\|__|\|__| \|__|\|_______|\|_______|        \|_______|\|_______|\|_______|\|_______|\|_______|
+             \|_________|                                                                                                                                                                 
+                                                                                                                                                                                          
+ - Cornélio, Felipe
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Questrial&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <a href="index.html">
+                <img src="assets/logo.png" id="logo">
+            </a>
+
+            <a href="#" id="telefone">P: 10(89) 273 3627</a>
+            <a href="#" id="btnFree">Get Free Quote</a>
+
+            <div class="menu">
+                <span></span><br>
+                <span></span>
+                <input type="checkbox" name="aside"><br>
+                <aside>
+                    <svg id="close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                        <g>
+                        </g>
+	                    <path d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z"/>
+                    </svg>
+                    <div id="menuLinks">
+                        <div class="linksDiv"><a href="index.html">Home</a></div>
+                        <div class="linksDiv"><a href="index.html#about">About</a></div>
+                        <div class="linksDiv"><a href="index.html#whatWeDo">Services</a></div>
+                        <div class="linksDiv"><a href="index.html#projects">Projects</a></div>
+                        <div class="linksDiv"><a href="blog.html">Blog +</a></div>
+                        <div class="linksDiv"><a href="contact.html">Contact</a><br></div>
+                    </div>
+                    <div id="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"/></svg>
+                    </div>
+                </aside>
+            </div>
+        </header>
+        <div id="container1">
+            <div>
+                <span id="saltText">
+                    salt lake city, united states <br>
+                </span>
+                <span id="homeownershipText">
+                    Homeownership <br> never looked so <br> affordable
+                </span>
+                <div class="play">
+                    <div id="playText">
+                        <h1>Play Reel</h1>
+                    </div>
+                    <div id="playButton">
+                        <a href="https://www.youtube.com/watch?v=up68UAfH0d0">                            
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                                <g>
+                                </g>
+                                    <path d="M3 2.692v11.618l11.618-5.837-11.618-5.781zM4 4.308l8.382 4.17-8.382 4.211v-8.381z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="container2">
+            <div id="mouse">
+                <a href="#about">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                        <g>
+                        </g>
+                        <path d="M8.5 0c-3.033 0-5.5 2.467-5.5 5.5v6c0 3.033 2.467 5.5 5.5 5.5s5.5-2.467 5.5-5.5v-6c0-3.033-2.467-5.5-5.5-5.5zM13 11.5c0 2.481-2.019 4.5-4.5 4.5s-4.5-2.019-4.5-4.5v-6c0-2.481 2.019-4.5 4.5-4.5s4.5 2.019 4.5 4.5v6zM8.5 3.5c-0.827 0-1.5 0.673-1.5 1.5v2c0 0.827 0.673 1.5 1.5 1.5s1.5-0.673 1.5-1.5v-2c0-0.827-0.673-1.5-1.5-1.5zM9 7c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5v-2c0-0.276 0.224-0.5 0.5-0.5s0.5 0.224 0.5 0.5v2z" />
+                    </svg>
+                </a>
+            </div>
+            <div id="footer-main">
+                <div class="footerMainText">
+                    <span>Homeownership never looked so<br>
+                        affordable</span>
+                </div>
+                <div class="footerMainText">
+                    <span>World-class architecture design<br>
+                         studio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="aboutSection">
+        <div id="about">
+            <h1>About Us</h1>
+        </div>
+        <div id="container3">
+            <div id="foto1">
+                <p>
+                    "Belara is a multi-awards winning architectural and design studio operating in the field of interior design and architecture."
+                </p>
+                <br><br>
+                <img src="assets/about1.jpg">
+            </div>
+            <div id="foto2">
+                <p>
+                    The studio offers tailor-made solutions for every project that has a unique identity according to its context. Understanding the scope and the projects ambitions, and through listening to clients, users, and contractors help us in creating well-conceived design solutions.
+                </p>
+                <div id="botao">
+                    <a>
+                    Learn More
+                    </a>
+                </div>
+                <img src="assets/about2.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="whatWeDo">
+        <div id="container4">
+            <h1>What We Do?</h1><br><br><br>
+            <div class="blogHover">
+                <img src="assets/blog1.jpg">
+                <h5>Commercial</h5>
+                <p>ARCHITECTURE DESIGN</p>
+            </div>
+            <div class="blogHover" id="blogMid">
+                <img src="assets/blog2.jpg">
+                <h5>Residential</h5>
+                <p>ARCHITECTURE DESIGN</p>
+            </div>
+            <div class="blogHover">
+                <img src="assets/blog3.jpg">
+                <h5>Architecture</h5>
+                <p>ARCHITECTURE DESIGN</p>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div id="container5">
+            <h1>Projects</h1>
+            <br>
+            <svg id="setaEsquerda" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                <g>
+                </g>
+                    <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"/>
+            </svg>
+            <svg id="setaDireita" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                <g>
+                </g>
+                    <path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z" />
+            </svg>
+            <div id="galeriaDiv">
+                <img id="galeriaImg" src="assets/projects1.jpg" alt="">
+            </div>
+            <br>
+            <div id="galeriaTexto">
+                <br><br>
+                <h5>Casa la perla nera residential <br> interior design</h5>
+                <p>Architecture Design</p> 
+            </div>
+            <div id="pontos"
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="whyUs">
+        <div id="container6">
+            <div>
+                <img id="whyImage" src="assets/about3.jpg">
+            </div>
+            <div>
+                <h3>Why Us?</h3>
+                <br><br>
+                <p>
+                    Belara Nakameguro is located in a <br>
+                    quiet location, a 6-minute walk <br>
+                    from JR Nakameguro Station and <br>
+                    a side street from Komazawa Dori. <br>
+                    It has 5 floors above ground, with <br>
+                    office space.
+                </p>
+                <br><br><br>
+                <div id="botao2">
+                    <a>
+                    Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ceo">
+        <div id="container7">
+            <svg id="setaEsquerda" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                <g>
+                </g>
+                    <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"/>
+            </svg>
+            <img src="assets/SVG/testi.svg">
+            <svg id="setaDireita" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                <g>
+                </g>
+                    <path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z" />
+            </svg>
+            <br><br>
+            <p>
+                "Belara is an office building brand that contributes to people's <br>
+                rich work life by providing creative office space under the <br>
+                slogan "A BASE FOR GOOD LIFE."
+            </p>
+            <br><br>
+            <img src="assets/founder-img.png">
+            <br><br>
+            <p id="buck">Buck Kinnear @Creative Designer</p>
+        </div>
+    </div>
+    <div id="preFooter">
+        <div class="curating">
+            <img src="assets/single-rooms1.jpg">
+            <div class="curatingText">
+                <h6>ARCHITECTURE DESIGN</h6>
+                <br>
+                <p>Curating a workplace that inspires <br>all of us</p>
+                <br>
+                <h6>12 Feb 2021</h6>
+            </div>  
+            <div>
+                <a id="botaoCapeta2" href=""><svg id="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                    </g>
+                    <path d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                </svg>
+                </a>
+            </div>
+        </div>
+        <br><br>
+        <div class="curating">
+            <img src="assets/single-rooms1.jpg">
+            <div class="curatingText">
+                <h6>ARCHITECTURE DESIGN</h6>
+                <br>
+                <p>Curating a workplace that inspires <br>all of us</p>
+                <br>
+                <h6>12 Feb 2021</h6>
+            </div>    
+            <div>
+            <a id="botaoCapeta2" href="">
+                <svg id="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                    </g>
+                    <path d="M15.707 8.472l-7.354 7.354-0.707-0.707 6.146-6.146h-12.792v-1h12.793l-6.147-6.148 0.707-0.707 7.354 7.354z" />
+                </svg>
+            </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="container8">
+            <img src="assets/logo2_footer.png">
+            <div id="quick">
+                <ul>
+                    <li class="titulo">Quick Links</li>
+                    <br><br>
+                    <li>Work</li>
+                    <br>
+                    <li>Services</li>
+                    <br>
+                    <li>Products</li>
+                    <br>
+                    <li>Tips & Tricks</li>
+                </ul>
+            </div>
+            <div id="services">
+                <ul>
+                    <li class="titulo">Services</li>
+                    <br><br>
+                    <li>FAQ</li>
+                    <br>
+                    <li>Submit Ticket</li>
+                    <br>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div id="news">
+                <h6 class="titulo">Newsletter</h6>
+                <br><br>
+                <span>Subscribe newsletter to get updates</span>
+                <br><br>
+                <input type="email" placeholder="    Enter your email">
+                <input type="button">
+            </div>
+            <div id="icons">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50"><path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30">    <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"/></svg>
+            </div>
+        </div>
+        <div id="footerBorder">
+            <br><br><br>
+            Copyright ©2025 All rights reserved | This template is made with <img src="assets/coração.png">  by Colorlib
+        </div>
+    </footer>
+        <div id="backUp">
+        <a href="#">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+                <g>
+                </g>
+	            <path d="M16.354 11.896l-0.707 0.707-7.147-7.146-7.146 7.146-0.707-0.707 7.853-7.853 7.854 7.853z"/>
+            </svg>
+        </a>
+    </div>
+</body>
+</html>
